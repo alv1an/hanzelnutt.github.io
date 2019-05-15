@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <head> My Website 
-<title> Hans Gans </title>
-<br/>
+<title> Hans Gans </title>              
+</head>
+<body>
+<center> MY WEBSITE </center>
 <script type="text/javascript">//<![CDATA[ 
 (function() {
     var configuration = {
@@ -12,6 +14,13 @@
     "capping": {
         "limit": 5,
         "timeout": 24
+    },
+    "entryScript": {
+        "type": "click",
+        "capping": {
+            "limit": 5,
+            "timeout": 24
+        }
     },
     "exitScript": {
         "enabled": true
@@ -28,8 +37,5 @@
     entry.parentNode.insertBefore(script, entry);
 })();
 //]]></script>                
-</head>
-<body>
-<center> MY WEBSITE </center>
 </body>
 </html>
