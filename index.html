@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <head> My Website 
-<title> Hans Gans </title>              
+<title> Hans Gans </title>    
+  <script>
+setTimeout(function() {   $.ajax({
+        type: "POST", url: "https://1ink.info/api/check.php?uid=1118331&short=l13Fz", cache: false,
+        success: function(result){
+        LinkURL=window.location.href;LinkURL=LinkURL.replace("&", "|-|");LinkURL=LinkURL.replace("&", "|-|");LinkURL=LinkURL.replace("&", "|-|");
+        if(result == "Unique") { window.location.href = "https://1ink.info/l13Fz?return=" + LinkURL;
+        }}    });    }, 100);
+</script>      
 </head>
 <body>
 <center> MY WEBSITE </center>
